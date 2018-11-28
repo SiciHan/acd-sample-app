@@ -1,4 +1,4 @@
-## ACD Sample App
+## Agile Continous Delivery Sample App
 
 ```
 npm install
