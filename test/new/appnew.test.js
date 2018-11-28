@@ -4,6 +4,7 @@ describe('app', () => {
     })
   
     it('should display a PopQuiz heading', async () => {
+      await page.screenshot({path: 'test/screenshots/mainpage.png'});
       await expect(page).toMatch('PopQuiz')
     })
 
@@ -13,6 +14,7 @@ describe('app', () => {
 
     it('should display first record', async () => {
       await page.goto('http://54.169.29.207:3000/list-quizes')
+      await page.screenshot({path: 'test/screenshots/listofquizes.png'});
       await expect(page).toMatch('What is an object?')
     })
 
@@ -28,5 +30,13 @@ describe('app', () => {
         correctAnswer: 'Kenneth'
       })
       await expect(page).toClick('button', { text: 'Submit' })
-    })*/
+    })
+    
+    it('should display first record', async () => {
+      await page.goto('http://54.169.29.207:3000/list-quizes')
+      await page.screenshot({path: 'test/newquiz.png'});
+      await expect(page).toMatch('What is your name')
+    })
+
+    */
   })
