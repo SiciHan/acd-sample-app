@@ -1,4 +1,4 @@
 #!/bin/bash
-source /home/ubuntu/.bash_profile
+source /home/ubuntu/.profile
 cd /home/ubuntu/acdsampleapp
 killall node
