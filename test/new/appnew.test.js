@@ -17,8 +17,7 @@ describe('app', () => {
       await page.screenshot({path: 'test/screenshots/listofquizes.png'});
       await expect(page).toMatch('What is an object?')
     })
-
-/*    
+   
     it('should display first record', async () => {
       await page.goto('http://54.169.29.207:3000/show-newQuizform')
       await expect(page).toFillForm('form[name="addNewQuiz"]', {
@@ -34,9 +33,9 @@ describe('app', () => {
     
     it('should display first record', async () => {
       await page.goto('http://54.169.29.207:3000/list-quizes')
-      await page.screenshot({path: 'test/newquiz.png'});
+      await page.screenshot({path: 'test/screenshots/newquiz.png'});
       await expect(page).toMatch('What is your name')
     })
 
-    */
+  
   })
