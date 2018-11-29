@@ -8,5 +8,6 @@ if [ -z "$x" ]
 then
       echo "No node process found!"
 else
+      echo "Node process found!"
       killall node
 fi
