@@ -71,13 +71,9 @@ sudo gdebi google-chrome-stable_current_amd64.deb
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rqeSE6xLVlA" target="_blank"><img src="http://img.youtube.com/vi/rqeSE6xLVlA/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-## Create Jenkins Pipeline Job integrate with Code Deploy
+## Create Jenkins Job integrate with Code Deploy & Testing
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-
-## Configure Jenkins job with unit test and e2e testing
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qS580v7Lsc4" target="_blank"><img src="http://img.youtube.com/vi/qS580v7Lsc4/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Test ACD Sample App
 * Working on the acd sample app Github repo. Checkout the source codes from github
@@ -139,4 +135,6 @@ git commit -m "test cdci"
 git push origin master -u
 ```
 
-## View E2E test result in screenshot
+## View E2E test result within screenshot folder
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=2lNDFGyOMJE" target="_blank"><img src="http://img.youtube.com/vi/2lNDFGyOMJE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
