@@ -6,6 +6,9 @@ password: password@1234
 
 Deployed NodeJS App URL : http://ec2-54-169-29-207.ap-southeast-1.compute.amazonaws.com:3000/
 
+AWS KEY:
+AWS SECRET KEY:
+
 
 E2E test tools (Possible to replace test tool with Selenium and etc)
 
@@ -26,8 +29,8 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Configure Jenkins - Bitnami Server (EC2)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=gMF_BD-MPgk
+" target="_blank"><img src="http://img.youtube.com/vi/gMF_BD-MPgk/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 * Login to the bitnami server (EC2 ipv4 address) using bitnami as the userid
@@ -42,6 +45,13 @@ cd ~
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi google-chrome-stable_current_amd64.deb
 ```
+
+## Create AWS user for Jenkins Code Deploy
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
+" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 
 ## Configure AWS Code Deploy Role for EC2 instance
 
