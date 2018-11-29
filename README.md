@@ -22,16 +22,12 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html
 
 ## Spin off an AWS EC2 Jenkins instance
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=RxwHjGAS4vQ" target="_blank"><img src="http://img.youtube.com/vi/RxwHjGAS4vQ/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 ## Configure Jenkins - Bitnami Server (EC2)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=gMF_BD-MPgk
-" target="_blank"><img src="http://img.youtube.com/vi/gMF_BD-MPgk/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=gMF_BD-MPgk" target="_blank"><img src="http://img.youtube.com/vi/gMF_BD-MPgk/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 * Login to the bitnami server (EC2 ipv4 address) using bitnami as the userid
 
