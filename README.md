@@ -59,29 +59,25 @@ sudo gdebi google-chrome-stable_current_amd64.deb
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=k95MEYwBU8E" target="_blank"><img src="http://img.youtube.com/vi/k95MEYwBU8E/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
+## Create AWS role for AWS Code Deploy Service
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6ZTkmE-M0Nk" target="_blank"><img src="http://img.youtube.com/vi/6ZTkmE-M0Nk/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ## Configure AWS Code Deploy on AWS Management Console
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Install Jenkins Code Deploy Plugin
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=rqeSE6xLVlA" target="_blank"><img src="http://img.youtube.com/vi/rqeSE6xLVlA/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-## Create Jenkins Build Job along with Code Deploy
+## Create Jenkins Pipeline Job integrate with Code Deploy
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Configure Jenkins job with unit test and e2e testing
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Test ACD Sample App
 * Working on the acd sample app Github repo. Checkout the source codes from github
@@ -139,19 +135,8 @@ npm test
 
 ```bash
 git add .
-git commit -m "test the cdci"
+git commit -m "test cdci"
 git push origin master -u
 ```
 
 ## View E2E test result in screenshot
-
-## Configure CloudWatch SNS With Slack 
-
-* On your working workstation install AWS CLI  
-  https://aws.amazon.com/cli/
-
-* Create a S3 bucket for SAM
-
-```
-aws --region ap-southeast-1 s3 mb s3://cw-to-slack-$kenken64
-```
