@@ -65,7 +65,7 @@ sudo gdebi google-chrome-stable_current_amd64.deb
 
 ## Configure AWS Code Deploy on AWS Management Console
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=WjH0USK86tg" target="_blank"><img src="http://img.youtube.com/vi/WjH0USK86tg/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Install Jenkins Code Deploy Plugin
 
