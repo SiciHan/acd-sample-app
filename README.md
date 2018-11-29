@@ -6,8 +6,8 @@
 
 * Deployed NodeJS App URL : http://ec2-54-169-29-207.ap-southeast-1.compute.amazonaws.com:3000/
 
-* AWS KEY ID: AKIAJPTODY5TI6CIQSKA
-* AWS SECRET KEY: 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
+* AWS KEY ID: <b>AKIAJPTODY5TI6CIQSKA</b>
+* AWS SECRET KEY: <b>hya8ylOSGoRIvP5aFeaz1VzJDNhZL9wVjPHsllLa</b>
 
 
 E2E test tools (Possible to replace test tool with Selenium and etc)
