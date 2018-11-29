@@ -57,9 +57,7 @@ sudo gdebi google-chrome-stable_current_amd64.deb
 
 ## Install Code Deploy Agent on the EC2 deployment instance
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=k95MEYwBU8E" target="_blank"><img src="http://img.youtube.com/vi/k95MEYwBU8E/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Configure AWS Code Deploy on AWS Management Console
 
