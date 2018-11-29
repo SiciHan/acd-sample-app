@@ -1,5 +1,12 @@
 ## Agile Continous Delivery Sample App
 
+Jenkins Hosted on AWS : http://ec2-13-251-81-39.ap-southeast-1.compute.amazonaws.com
+username: user
+password: password@1234
+
+Deployed NodeJS App URL : http://ec2-54-169-29-207.ap-southeast-1.compute.amazonaws.com:3000/
+
+
 E2E test tools (Possible to replace test tool with Selenium and etc)
 
 - Chrome testing - https://github.com/GoogleChrome/puppeteer
@@ -10,7 +17,11 @@ E2E test tools (Possible to replace test tool with Selenium and etc)
 ## AWS Region and Endpoints 
 https://docs.aws.amazon.com/general/latest/gr/rande.html
 
-## Spin off a AWS EC2 Jenkins instance
+## Spin off an AWS EC2 Jenkins instance
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
+" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 ## Configure Jenkins - Bitnami Server (EC2)
@@ -115,7 +126,8 @@ npm test
         <hr class="my-4">
         <p>Technology behind this app is simple and outdated -  bootstrap 4, node js , mongodb and handlebar.</p>
         <a href="/list-quizes" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Manage Pop Quizes</a>
-        <a href="/list-quizes" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Manage Pop Quizes</a>
+        <a href="/list-quizes" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Manage Pop Quizes 2</a>
+        <a href="/list-quizes" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Manage Pop Quizes 3</a>
       
         </div>
     <!-- Optional JavaScript -->
