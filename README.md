@@ -14,6 +14,10 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html
 
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
+" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 * Login to the bitnami server (EC2 ipv4 address) using bitnami as the userid
 
 * Once login to bitnami server install the following dependencies
