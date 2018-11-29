@@ -1,13 +1,13 @@
 ## Agile Continous Delivery Sample App
 
-Jenkins Hosted on AWS : http://ec2-13-251-81-39.ap-southeast-1.compute.amazonaws.com
-username: user
-password: password@1234
+* Jenkins Hosted on AWS : http://ec2-13-251-81-39.ap-southeast-1.compute.amazonaws.com
+    * username: user
+    * password: password@1234
 
-Deployed NodeJS App URL : http://ec2-54-169-29-207.ap-southeast-1.compute.amazonaws.com:3000/
+* Deployed NodeJS App URL : http://ec2-54-169-29-207.ap-southeast-1.compute.amazonaws.com:3000/
 
-AWS KEY ID: AKIAJPTODY5TI6CIQSKA
-AWS SECRET KEY: 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
+* AWS KEY ID: AKIAJPTODY5TI6CIQSKA
+* AWS SECRET KEY: hya8ylOSGoRIvP5aFeaz1VzJDNhZL9wVjPHsllLa
 
 
 E2E test tools (Possible to replace test tool with Selenium and etc)
