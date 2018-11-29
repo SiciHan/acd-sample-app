@@ -18,7 +18,7 @@ describe('app', () => {
       await expect(page).toMatch('What is an object?')
     })
    
-    it('should display first record', async () => {
+    it('add a new pop quiz', async () => {
       await page.goto('http://54.169.29.207:3000/show-newQuizform')
       await expect(page).toFillForm('form[name="addNewQuiz"]', {
         question: 'What is your name?',
@@ -31,7 +31,7 @@ describe('app', () => {
       await expect(page).toClick('button', { text: 'Submit' })
     })
     
-    it('should display first record', async () => {
+    it('list all pop quizes after adding', async () => {
       await page.goto('http://54.169.29.207:3000/list-quizes')
       await page.screenshot({path: 'test/screenshots/newquiz.png'});
       await expect(page).toMatch('What is your name')
