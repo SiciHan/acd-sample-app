@@ -6,8 +6,8 @@ password: password@1234
 
 Deployed NodeJS App URL : http://ec2-54-169-29-207.ap-southeast-1.compute.amazonaws.com:3000/
 
-AWS KEY:
-AWS SECRET KEY:
+AWS KEY ID: AKIAJPTODY5TI6CIQSKA
+AWS SECRET KEY: hya8ylOSGoRIvP5aFeaz1VzJDNhZL9wVjPHsllLa
 
 
 E2E test tools (Possible to replace test tool with Selenium and etc)
@@ -20,7 +20,7 @@ E2E test tools (Possible to replace test tool with Selenium and etc)
 ## AWS Region and Endpoints 
 https://docs.aws.amazon.com/general/latest/gr/rande.html
 
-## Spin off an AWS EC2 Jenkins instance
+## Spin off AWS EC2 Jenkins instance
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=RxwHjGAS4vQ" target="_blank"><img src="http://img.youtube.com/vi/RxwHjGAS4vQ/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
@@ -44,24 +44,18 @@ sudo gdebi google-chrome-stable_current_amd64.deb
 
 ## Create AWS user for Jenkins Code Deploy
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=0Y2ER4fE_bo" target="_blank"><img src="http://img.youtube.com/vi/0Y2ER4fE_bo/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 ## Configure AWS Code Deploy Role for EC2 instance
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ORCA_NgXDXM" target="_blank"><img src="http://img.youtube.com/vi/ORCA_NgXDXM/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-## Spin off a AWS EC2 Jenkins instance
+## Spin off a AWS EC2 Deployment instance
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
-" target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=-_75hMRc898" target="_blank"><img src="http://img.youtube.com/vi/-_75hMRc898/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-## Install Code Deploy Agent on the EC2 instance
+## Install Code Deploy Agent on the EC2 deployment instance
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6YbBmqUnoQM
 " target="_blank"><img src="http://img.youtube.com/vi/6YbBmqUnoQM/0.jpg" 
