@@ -23,7 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 
 MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client){
-    console.log(err);
     assert.equal(null, err);
     console.log("Connecting to mongodb ....");
     
