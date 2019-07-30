@@ -3,7 +3,7 @@
 ## v1.0
 * Added test script for the app
 * Make changes to the sequence of the test script
-
+* Tagged and branched out to enhancement #1
 ## Instructions
 * Jenkins Hosted on AWS : http://ec2-13-251-81-39.ap-southeast-1.compute.amazonaws.com
     * username: user
