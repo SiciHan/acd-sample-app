@@ -1,5 +1,10 @@
 ## Agile Continous Delivery Sample App
 
+## v1.0
+* Added test script for the app
+* Make changes to the sequence of the test script
+
+## Instructions
 * Jenkins Hosted on AWS : http://ec2-13-251-81-39.ap-southeast-1.compute.amazonaws.com
     * username: user
     * password: password@1234
