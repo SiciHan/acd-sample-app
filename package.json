@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "npm i; npm start; jest -c test/jest.config.js",
+    "test": "npm i; npm start &; jest -c test/jest.config.js",
     "test:new": "jest -c test/jest.new.config.js",
     "start": "node server.js"
   },
