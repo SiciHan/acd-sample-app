@@ -1,6 +1,7 @@
 #!/bin/bash
 source /home/ubuntu/.profile
 cd /home/ubuntu/acdsampleapp
+chmod +x scripts/*.sh
 if which node > /dev/null
 then
     echo "node is installed, skipping..."
