@@ -1,6 +1,5 @@
 #!/bin/bash
 source /home/ubuntu/.profile
-mkdir /home/ubuntu/acdsampleapp
 cd /home/ubuntu/acdsampleapp
 chmod +x scripts/*.sh
 if which node > /dev/null

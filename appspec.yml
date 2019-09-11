@@ -5,21 +5,20 @@ files:
   - source: /
     destination: /home/ubuntu/acdsampleapp
 
-permissions:
-  - object: /
-    pattern: "**"
-    owner: ubuntu
-    group: ubuntu
 hooks:
   BeforeInstall:
     - location: scripts/install.sh
-      runas: ubuntu
+      timeout: 300
+      runas: root
   ApplicationStop:
     - location: scripts/stopServer.sh
-      runas: ubuntu
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: scripts/startServer.sh
-      runas: ubuntu
+      timeout: 300
+      runas: root
   ValidateService:
     - location: scripts/validate.sh
-      runas: ubuntu
+      timeout: 300
+      runas: root
