@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', router);
+app.use('/api', router);
 
 MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client){
     assert.equal(null, err);
@@ -37,7 +37,7 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
     
         quizCollection = db.collection('quiz');
 
-        router.post('/newQuiz', function(req, res, next){
+        router.post('/quiz', function(req, res, next){
             console.log(req.body);
             var newPopQuizForm = req.body;
 
@@ -58,7 +58,7 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             });
         });
 
-        router.post('/saveEditQuiz', (req, res, next)=>{
+        router.put('/quiz', (req, res, next)=>{
             var _answers = [];
             var id = req.body.id;
             console.log("Update Quiz");
@@ -81,7 +81,7 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             });
         });
 
-        router.post('/deleteQuiz', (req, res, next)=>{
+        router.delete('/quiz', (req, res, next)=>{
             var id = req.body.id;
             console.log("delete Quiz");
             console.log("id > " + id);
@@ -91,7 +91,7 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             });
         });
         
-        router.get('/show-EditQuiz/:id', (req,res, next)=>{
+        router.get('/quiz/:id', (req,res, next)=>{
             var _id = req.params.id;
             console.log("_id" + _id);
             var oid = new ObjectId(_id)
@@ -111,7 +111,7 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             });
         });
 
-        router.get('/show-DeleteQuiz/:id', (req,res, next)=>{
+        router.get('/show-deletequizes/:id', (req,res, next)=>{
             var _id = req.params.id;
             console.log("_id" + _id);
             var oid = new ObjectId(_id)
@@ -136,13 +136,14 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             res.render('newQuiz', {});
         })
 
-        router.get('/list-quizes', (req,res,next)=>{
+        /*
+        router.get('/quizes', (req,res,next)=>{
             quizCollection.find({}).project({correctAnswer: 0}).toArray(function(err, quizes){
                 console.log("from mongodb...");
                 //console.log(JSON.stringify(quizes));
                 res.render('listQuiz', {quizes: quizes});
             });
-        })
+        })*/
 
         router.get('/quiz', function(req,res,next){
             quizCollection.find({}).project({correctAnswer: 0}).toArray(function(err, quizes){

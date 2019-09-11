@@ -52,7 +52,7 @@ describe('app', () => {
       // get seconds 
       var seconds = Math.round(timeDiff);
       console.log(seconds + " seconds");
-      expect(timeDiff).toBeLessThanOrEqual(0.3);
+      expect(timeDiff).toBeLessThanOrEqual(1);
     })
     
     it('list all pop quizes after adding', async () => {
