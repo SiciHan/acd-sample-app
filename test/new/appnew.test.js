@@ -14,13 +14,13 @@ describe('app', () => {
     })
 
     it('should display first record', async () => {
-      await page.goto("http://localhost:3000/list-quizes")
+      await page.goto("http://localhost:3000/api/list-quizes")
       await page.screenshot({path: 'test/screenshots/listofquizes.png'});
       await expect(page).toMatch('What colour is Donald Trump\'s hair\?')
     })
    
     it('add a new pop quiz', async () => {
-      await page.goto("http://localhost:3000/show-newQuizform")
+      await page.goto("http://localhost:3000/api/show-newQuizform")
       await expect(page).toFillForm('form[name="addNewQuiz"]', {
         question: 'What is your name?',
         answer1: 'Kenneth',
@@ -35,7 +35,7 @@ describe('app', () => {
     it('benchmark adding a new pop quiz', async () => {
       var startTime, endTime;
       startTime = new Date();
-      await page.goto("http://localhost:3000/show-newQuizform")
+      await page.goto("http://localhost:3000/api/show-newQuizform")
       await expect(page).toFillForm('form[name="addNewQuiz"]', {
         question: 'Current USA president?',
         answer1: 'Donald Duck',
@@ -57,7 +57,7 @@ describe('app', () => {
     })
     
     it('list all pop quizes after adding', async () => {
-      await page.goto("http://localhost:3000/list-quizes")
+      await page.goto("http://localhost:3000/api/list-quizes")
       await page.screenshot({path: 'test/screenshots/newquiz.png'});
       await expect(page).toMatch('What is your name')
     })

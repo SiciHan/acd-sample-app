@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest -c test/jest.config.js",
+    "test": "jest -c test/jest.config.js --coverage --coverageDirectory=output/coverage/jest",
     "test:new": "jest -c test/jest.new.config.js",
     "start": "node server.js"
   },
@@ -14,6 +14,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "hbs": "^4.0.1",
+    "jest-junit": "^8.0.0",
     "mongodb": "^3.1.10",
     "prompt": "^1.0.0",
     "request": "^2.88.0"

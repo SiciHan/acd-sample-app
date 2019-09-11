@@ -37,7 +37,7 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
     
         quizCollection = db.collection('quiz');
 
-        router.post('/quiz', function(req, res, next){
+        router.post('/newQuiz', function(req, res, next){
             console.log(req.body);
             var newPopQuizForm = req.body;
 
@@ -54,11 +54,11 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             
             quizCollection.insertOne(newPopQuiz,function(err, result){
                 console.log(result);
-                res.redirect('/list-quizes');
+                res.redirect('/api/list-quizes');
             });
         });
 
-        router.put('/quiz', (req, res, next)=>{
+        router.post('/updateQuiz', (req, res, next)=>{
             var _answers = [];
             var id = req.body.id;
             console.log("Update Quiz");
@@ -77,17 +77,17 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
                 correctAnswer: req.body.correctAnswer
             } }, (err, result)=>{
                 //console.log(result);
-                res.redirect('/list-quizes');
+                res.redirect('/api/list-quizes');
             });
         });
 
-        router.delete('/quiz', (req, res, next)=>{
+        router.post('/deleteQuiz', (req, res, next)=>{
             var id = req.body.id;
             console.log("delete Quiz");
             console.log("id > " + id);
             var oid = new ObjectId(id);
             quizCollection.deleteOne({_id: oid}, (err, result)=>{
-                res.redirect('/list-quizes');
+                res.redirect('/api/list-quizes');
             });
         });
         
@@ -136,14 +136,13 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             res.render('newQuiz', {});
         })
 
-        /*
-        router.get('/quizes', (req,res,next)=>{
+        router.get('/list-quizes', (req,res,next)=>{
             quizCollection.find({}).project({correctAnswer: 0}).toArray(function(err, quizes){
                 console.log("from mongodb...");
                 //console.log(JSON.stringify(quizes));
                 res.render('listQuiz', {quizes: quizes});
             });
-        })*/
+        })
 
         router.get('/quiz', function(req,res,next){
             quizCollection.find({}).project({correctAnswer: 0}).toArray(function(err, quizes){
