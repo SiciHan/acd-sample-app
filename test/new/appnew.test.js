@@ -15,7 +15,7 @@ describe('app', () => {
     it('should display first record', async () => {
       await page.goto("http://localhost:3000/list-quizes")
       await page.screenshot({path: 'test/screenshots/listofquizes.png'});
-      await expect(page).toMatch('What is an object?')
+      await expect(page).toMatch('What colour is Donald Trump\'s hair\?')
     })
    
     it('add a new pop quiz', async () => {
@@ -52,7 +52,7 @@ describe('app', () => {
       // get seconds 
       var seconds = Math.round(timeDiff);
       console.log(seconds + " seconds");
-      expect(timeDiff).toBeLessThanOrEqual(0.2);
+      expect(timeDiff).toBeLessThanOrEqual(0.3);
     })
     
     it('list all pop quizes after adding', async () => {
