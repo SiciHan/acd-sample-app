@@ -1,25 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="0" time="6.328">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-11T15:08:19" time="0.877" tests="1">
-    <testcase classname=" adds 1 + 2 to equal 3" name=" adds 1 + 2 to equal 3" time="0.004">
+<testsuites name="jest tests" tests="8" failures="7" time="5.253">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-12T00:55:07" time="2.27" tests="1">
+    <testcase classname=" adds 1 + 2 to equal 3" name=" adds 1 + 2 to equal 3" time="0.007">
     </testcase>
   </testsuite>
-  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2019-09-11T15:08:19" time="1.314" tests="1">
-    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="0.396">
+  <testsuite name="app" errors="0" failures="1" skipped="0" timestamp="2019-09-12T00:55:07" time="2.339" tests="1">
+    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="0.353">
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/current/appcurrent.test.js:3:18)
+    at Object.asyncJestLifecycle (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+      <failure>Error: Text not found &quot;PopQuiz&quot;
+JSHandles can be evaluated only in the context they were created!</failure>
     </testcase>
   </testsuite>
-  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2019-09-11T15:08:19" time="4.679" tests="6">
-    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="0.733">
+  <testsuite name="app" errors="0" failures="6" skipped="0" timestamp="2019-09-12T00:55:07" time="2.814" tests="6">
+    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="0.563">
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:4:18)
+    at Object.asyncJestLifecycle (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+      <failure>Error: ENOENT: no such file or directory, open &apos;test/screenshots/mainpage.png&apos;
+  -- ASYNC --
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Object.screenshot (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:8:18)
+    at Object.asyncJestTest (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
     </testcase>
-    <testcase classname="app click manage pop quiz " name="app click manage pop quiz " time="0.042">
+    <testcase classname="app click manage pop quiz " name="app click manage pop quiz " time="0.026">
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:4:18)
+    at Object.asyncJestLifecycle (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)</failure>
+      <failure>Error: Execution context was destroyed, most likely because of a navigation.</failure>
     </testcase>
-    <testcase classname="app should display first record" name="app should display first record" time="1.5">
+    <testcase classname="app should display first record" name="app should display first record" time="0.029">
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:4:18)
+    at Object.asyncJestLifecycle (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/api/list-quizes
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:17:18)
+    at Object.asyncJestTest (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
     </testcase>
-    <testcase classname="app add a new pop quiz" name="app add a new pop quiz" time="0.387">
+    <testcase classname="app add a new pop quiz" name="app add a new pop quiz" time="0.026">
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:4:18)
+    at Object.asyncJestLifecycle (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/api/show-newQuizform
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:23:18)
+    at Object.asyncJestTest (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
     </testcase>
-    <testcase classname="app benchmark adding a new pop quiz" name="app benchmark adding a new pop quiz" time="0.497">
+    <testcase classname="app benchmark adding a new pop quiz" name="app benchmark adding a new pop quiz" time="0.037">
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:4:18)
+    at Object.asyncJestLifecycle (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/api/show-newQuizform
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:38:18)
+    at Object.asyncJestTest (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
     </testcase>
-    <testcase classname="app list all pop quizes after adding" name="app list all pop quizes after adding" time="0.651">
+    <testcase classname="app list all pop quizes after adding" name="app list all pop quizes after adding" time="0.051">
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:4:18)
+    at Object.asyncJestLifecycle (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:63:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+      <failure>Error: net::ERR_CONNECTION_REFUSED at http://localhost:3000/api/list-quizes
+    at navigate (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/FrameManager.js:121:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.goto (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/Page.js:674:49)
+    at Page.&lt;anonymous&gt; (/Users/phangty/Projects/acd-sample-app/node_modules/puppeteer/lib/helper.js:112:23)
+    at Object.goto (/Users/phangty/Projects/acd-sample-app/test/new/appnew.test.js:60:18)
+    at Object.asyncJestTest (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/Users/phangty/Projects/acd-sample-app/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
     </testcase>
   </testsuite>
 </testsuites>
