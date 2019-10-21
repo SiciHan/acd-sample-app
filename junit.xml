@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="8" failures="0" time="10.089">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-12T01:02:58" time="1.528" tests="1">
-    <testcase classname=" adds 1 + 2 to equal 3" name=" adds 1 + 2 to equal 3" time="0.006">
+<testsuites name="jest tests" tests="8" failures="0" time="8.439">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-10-21T15:16:08" time="0.994" tests="1">
+    <testcase classname=" adds 1 + 2 to equal 3" name=" adds 1 + 2 to equal 3" time="0.008">
     </testcase>
   </testsuite>
-  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2019-09-12T01:02:58" time="2.504" tests="1">
-    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="1.072">
+  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2019-10-21T15:16:08" time="1.313" tests="1">
+    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="0.318">
     </testcase>
   </testsuite>
-  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2019-09-12T01:02:58" time="7.459" tests="6">
-    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="1.357">
+  <testsuite name="app" errors="0" failures="0" skipped="0" timestamp="2019-10-21T15:16:08" time="6.508" tests="6">
+    <testcase classname="app should display a PopQuiz heading" name="app should display a PopQuiz heading" time="0.365">
     </testcase>
-    <testcase classname="app click manage pop quiz " name="app click manage pop quiz " time="0.133">
+    <testcase classname="app click manage pop quiz " name="app click manage pop quiz " time="0.04">
     </testcase>
-    <testcase classname="app should display first record" name="app should display first record" time="2.182">
+    <testcase classname="app should display first record" name="app should display first record" time="2.952">
     </testcase>
-    <testcase classname="app add a new pop quiz" name="app add a new pop quiz" time="0.663">
+    <testcase classname="app add a new pop quiz" name="app add a new pop quiz" time="0.454">
     </testcase>
-    <testcase classname="app benchmark adding a new pop quiz" name="app benchmark adding a new pop quiz" time="0.777">
+    <testcase classname="app benchmark adding a new pop quiz" name="app benchmark adding a new pop quiz" time="0.587">
     </testcase>
-    <testcase classname="app list all pop quizes after adding" name="app list all pop quizes after adding" time="0.933">
+    <testcase classname="app list all pop quizes after adding" name="app list all pop quizes after adding" time="0.627">
     </testcase>
   </testsuite>
 </testsuites>

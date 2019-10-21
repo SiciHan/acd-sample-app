@@ -111,6 +111,36 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
             });
         });
 
+        router.get('/try-quizes', (req,res, next)=>{
+            
+            quizCollection.find({}).project({correctAnswer: 0}).toArray(function(err, quizes){
+                let randomQuizes = [];
+                quizes.forEach(element => {
+                    randomQuizes.push(element);
+                });
+                console.log(randomQuizes);
+                let randomChoice = getRandomInt(randomQuizes.length);
+                console.log("randomChoice >>> " + randomChoice);
+                console.log(randomQuizes[randomChoice]._id);
+                console.log(randomQuizes[randomChoice].answers[0]);
+                var tryOutQuiz = {
+                    id: randomQuizes[randomChoice]._id,
+                    question: randomQuizes[randomChoice].question,
+                    answer1: randomQuizes[randomChoice].answers[0].value,
+                    answer2: randomQuizes[randomChoice].answers[1].value,
+                    answer3: randomQuizes[randomChoice].answers[2].value,
+                    answer4: randomQuizes[randomChoice].answers[3].value,
+                    correctAnswer: randomQuizes[randomChoice].correctAnswer
+                }
+                res.render('tryquiz', {tryQuiz: tryOutQuiz});
+            });
+            
+        });
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+          }
+
         router.get('/show-deletequizes/:id', (req,res, next)=>{
             var _id = req.params.id;
             console.log("_id" + _id);
@@ -139,8 +169,9 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
         router.get('/list-quizes', (req,res,next)=>{
             quizCollection.find({}).project({correctAnswer: 0}).toArray(function(err, quizes){
                 console.log("from mongodb...");
-                //console.log(JSON.stringify(quizes));
-                res.render('listQuiz', {quizes: quizes});
+                console.log(JSON.stringify(quizes));
+                console.log(quizes.length);
+                res.render('listQuiz', {quizes: quizes, isEmpty:quizes.length <= 0,});
             });
         })
 
@@ -153,21 +184,22 @@ MongoClient.connect(mongodb_url, { useNewUrlParser: true }, function(err, client
         });
         
         router.post('/check-answer', function(req,res,next){
-            var answer = req.body;
-            var isCorrect = false;
-            console.log(answer.answer);
-            console.log(answer.id);
-            var oid  = new ObjectId(answer.id);
+            console.log("CHECK ANSWER !!!!")
+            let incomingQuiz = req.body;
+            let isCorrectDesc = "Incorrect";
+            let isCorrect = false;
+            console.log(incomingQuiz.answer);
+            console.log(incomingQuiz._id);
+            let oid  = new ObjectId(incomingQuiz.id);
             quizCollection.findOne({_id: oid},(err, result)=>{
                 console.log(JSON.stringify(result));
                 console.log(result.correctAnswer)
-                if(result.correctAnswer === answer.answer){
+                if(result.correctAnswer === incomingQuiz.answer){
                     console.log("CORRECT !");
-                    isCorrect = true
-                }else{
-                    console.log("NOT CORRECT !");
+                    isCorrectDesc = "Correct";
+                    isCorrect = true;
                 }
-                res.json({result: isCorrect});
+                res.render('confirm', {isCorrectDesc: isCorrectDesc, isCorrect: isCorrect});
             });
             
         });

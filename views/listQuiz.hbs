@@ -1,21 +1,31 @@
 <div class="container">      
     <div class="row">
     <br>
-    <a href="/api/show-newQuizform" class="btn btn-primary"><ion-icon name="add"></ion-icon></a>
+    <a href="/" class="btn btn-primary"><ion-icon name="home"></ion-icon>Home</a>&nbsp;&nbsp;
+    <a href="/api/show-newQuizform" class="btn btn-primary"><ion-icon name="add"></ion-icon>Add</a>
+      {{#if isEmpty}}
+          <table class="table table-striped">
+            <thead>
+            <tr>
+                <th colspan="3"><p>No record found ! </p></th>
+            </tr>
+            </thead>
+          </table>
+      {{else}}
       <table class="table table-striped">
         <thead>
         <tr>
             <th>Question</th>
-            <th colspan="2">Action</th>
+            <th colspan="2"></th>
         </tr>
         </thead>
         {{#each quizes}} 
           <tr>
             <td>{{this.question}}</td>
-            <td><a href="/api/quiz/{{this._id}}"><i class="icon ion-md-save"></i></a></td>
-            <td><a href="/api/show-deletequizes/{{this._id}}"><i class="icon ion-md-trash"></i></a></td> 
+            <td align="right"><a href="/api/quiz/{{this._id}}"><ion-icon ios="ios-hammer" md="md-hammer"></ion-icon>Edit</a>&nbsp;<a href="/api/show-deletequizes/{{this._id}}"><ion-icon ios="ios-trash" md="md-trash"></ion-icon>Remove</a></td> 
           </tr>          
        {{/each}}   
       </table>
+      {{/if}}
     </div>
 </div>

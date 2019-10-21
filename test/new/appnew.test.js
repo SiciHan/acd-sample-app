@@ -20,6 +20,7 @@ describe('app', () => {
     })
    
     it('add a new pop quiz', async () => {
+      console.log("add new quiz >")
       await page.goto("http://localhost:3000/api/show-newQuizform")
       await expect(page).toFillForm('form[name="addNewQuiz"]', {
         question: 'What is your name?',
@@ -29,7 +30,8 @@ describe('app', () => {
         answer4: 'Max',
         correctAnswer: 'Kenneth'
       })
-      await expect(page).toClick('button', { text: 'Submit' })
+      await expect(page).toClick('button', { text: 'Submit' });
+      console.log("add new quiz >")
     })
 
     it('benchmark adding a new pop quiz', async () => {
