@@ -5,7 +5,8 @@ const express = require('express'),
       ObjectId = require('mongodb').ObjectId,
       path = require('path');
 
-const mongodb_url = "mongodb://mguser:password1234@ds119304.mlab.com:19304/quizdb";
+//const mongodb_url = "mongodb://mguser:password1234@ds119304.mlab.com:19304/quizdb";
+const mongodb_url = "mongodb://localhost:27017/quizdb";
 console.log(mongodb_url);
 // initialize the express app object
 var app = express();
